@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct cel
-{
+struct cel {
    int        conteudo;
    struct cel *prox;
 };
 
 typedef struct cel cel;
 
-int main(int argc, char const *argv[])//função principal argc = argumentos e argv = argumentos
-{
+//função principal argc = argumentos e argv = argumentos 
+int main(int argc, char const *argv[]) {
    FILE *arquivo;
    cel  *lista, *nova, *posicao, *p;
    int  v;
@@ -18,7 +17,9 @@ int main(int argc, char const *argv[])//função principal argc = argumentos e a
    arquivo = fopen("entrada.txt", "r");
 
    lista       = (cel *)malloc(sizeof(struct cel));
-   lista->prox = NULL;  // cabeca da lista sem conteudo, para criar uma lista vazia sem cabeca basta colocar celula *ini; ini = NULL;//
+   
+   // cabeca da lista sem conteudo, para criar uma lista vazia sem cabeca basta colocar celula *ini; ini = NULL;//
+   lista->prox = NULL;  
            posicao->prox != NULL && posicao->prox->conteudo > v;
            posicao = posicao->prox); // p->prox o endereco do proximo elemento//
 
